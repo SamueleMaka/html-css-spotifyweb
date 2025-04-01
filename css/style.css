@@ -20,6 +20,9 @@ ul,
 li {
   list-style: none;
 }
+.green{
+  color: #a3f02e;
+}
 .small-text{
   font-size: 0.5rem;
 }
@@ -28,6 +31,9 @@ li {
 }
 .large-text{
   font-size: 0.8rem;
+}
+.larger-text{
+  font-size: 1rem;
 }
 .inline-list{
   display: inline-block;
@@ -61,6 +67,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 99999;
 }
 
 .logo{
@@ -102,7 +109,7 @@ a{
   justify-content: center;
 }
 .playlist-list li{
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 .install-app{
   display: flex;
@@ -164,18 +171,44 @@ header{
 /* ========== Wrapper ==========*/
 
 .wrapper-header ul{
-  width: 50%;
+  width: 75%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   height: 2rem;
+  flex-wrap: wrap;
+}
+.wrapper-header li{
+  margin: 0 1rem;  
 }
 
-
+.recently-played h1{
+  margin: 2rem 1.5rem; 
+}
 /* ========== Bottom Bar ==========*/
 
 .bottom-bar{
   height: 7.5vh;
   background-color: #282828;
+}
+.carousel{
+  display: flex;
+}
+.album-card{
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 6);
+  height: 18vh;
+  gap: calc(100%/35);
+  flex-wrap: wrap;
+}
+
+.album-card img{
+  height: 100%;
+}
+
+.album-card__title{
+  text-align: center;
+  width: 100%;
 }

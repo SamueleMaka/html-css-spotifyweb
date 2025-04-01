@@ -1,0 +1,4 @@
+sistemare l'header
+fare tutti gli effetti di hover
+pulire il css ed eliminare classi duplicate
+adattare le larghezze e dimensioni per il tablet
