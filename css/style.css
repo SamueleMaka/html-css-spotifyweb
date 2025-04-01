@@ -1,20 +1,129 @@
 /* General Reset and Base Styles */
 html {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  /* Universal selector for margin, padding, and box-sizing */
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-  
-  /* List Styles */
-  ul,
-  li {
-    list-style: none;
-  }
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #a3a3a3;
+  font-weight: bold;
+}
+
+/* Universal selector for margin, padding, and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* List Styles */
+ul,
+li {
+  list-style: none;
+}
+.small-text{
+  font-size: 0.5rem;
+}
+.medium-text{
+  font-size: 0.7rem;
+}
+.large-text{
+  font-size: 0.8rem;
+}
+.upper-case{
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+.white{
+  color: white;
+  font-size: 1rem;
+}
+.bold{
+  font-weight: bold;
+}
+
+a{
+  all: unset;
+}
+.container{
+  display: flex;
+  width: 100%;
+}
+
+.left-sidebar{
+  height: calc(90vh);
+  width: 15%;
+  background-color: black;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo{
+  padding: 1rem 0;
+}
+
+.sidebar-action{
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+}
+
+.sidebar-action > h3 {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.sidebar-action > img{
+  height: 100%;
+}
+#playlist-title{
+  margin: 1rem 0;
+}
+.new-playlist{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.plus{
+  width: 2rem;
+  height: 2rem;
+  font-size: 2.5rem;
+  background-color: #a3a3a3;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playlist-list li{
+  margin: 1.5rem 0;
+}
+.install-app{
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+}
+.install-app img{
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.account{
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+}
+.account img{
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin-right: 1rem;
+  background-color: #a3a3a3;
+  border-radius: 50%;
+
+}
