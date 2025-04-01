@@ -1,0 +1,20 @@
+/* General Reset and Base Styles */
+html {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Universal selector for margin, padding, and box-sizing */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  /* List Styles */
+  ul,
+  li {
+    list-style: none;
+  }
