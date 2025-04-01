@@ -1,0 +1,73 @@
+@media screen and (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .left-sidebar{
+        width: 37.5vw;
+    }
+   .song-card img{
+    flex-shrink: 2;
+   }
+   .album-card{
+    flex-basis: 40%;
+   }
+   .wrapper{
+    width: 90%;
+    margin: 0 auto;
+   }
+   .bottom-bar__player{
+    flex-basis: 40%;
+   }
+   .bottom-bar__current{
+    flex-basis: 28%;
+   }
+   .bottom-bar__actions{
+    flex-basis: 28%
+   }
+   .bottom-bar{
+    width: 98%;
+   }
+}
+
+@media screen and (max-width: 578px){
+    .song-card img{
+        height: 50%;
+    }
+    header{
+        width: 100vw;
+        margin-left: 0;
+    }
+    .left-sidebar{
+        width: 10vw;
+    }
+    .logo{
+        display: none;
+    }
+    .sidebar-action > h3{
+        display: none;
+    }
+    #playlist-title{
+        display: none;
+    }
+    .new-playlist{
+        display: none;
+    }
+    .playlist-list{
+        display: none;
+    }
+    .install-app p{
+        display: none;
+    }
+    .account h3{
+        display: none;
+    }
+    .volume-container{
+        flex-basis: 40%;
+    }
+    .small-logo{
+        display: inline-block;
+    }
+}
