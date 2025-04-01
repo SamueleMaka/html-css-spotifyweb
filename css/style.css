@@ -55,7 +55,7 @@ a{
 
 .left-sidebar{
   height: 92.5vh;
-  width: 15%;
+  width: 17.5vw;
   background-color: black;
   padding: 0 1rem;
   display: flex;
@@ -136,11 +136,12 @@ main{
   height: 82.5vh;
   background-color: #141922;
   margin-top: 10vh;
+  overflow: auto;
 }
 /* ========== Header ==========*/
 header{
   background-color: #080b12;
-  width: 100%;
+  width: 85vw;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -148,6 +149,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+  margin-left: 15vw;
   z-index: 9999;
 }
 
