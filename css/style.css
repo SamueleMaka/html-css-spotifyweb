@@ -41,7 +41,7 @@ li {
   font-size: 1rem;
 }
 
-.inline-list {
+.inline-list > li{
   display: inline-block;
 }
 
@@ -76,14 +76,12 @@ a {
 
 .left-sidebar {
   height: 85vh;
-  width: 17.5vw;
+  width: 200px;
   background-color: black;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 99999;
-  overflow: auto;
 }
 
 .logo {
@@ -95,7 +93,9 @@ a {
   display: none;
 }
 
-
+.green-line{
+  border-left: 2px solid #a3f02e;
+}
 .sidebar-item>h3 {
   display: inline-block;
   margin-left: 1rem;
@@ -107,6 +107,7 @@ a {
 
 #playlist-title {
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .new-playlist {
@@ -114,6 +115,7 @@ a {
   gap: 1rem;
   align-items: center;
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .plus {
@@ -129,6 +131,7 @@ a {
 
 .playlist-list li {
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .install-app img {
@@ -142,6 +145,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin: 0.5rem 0;
+  padding: 0 1rem;
 }
 
 .sidebar-item .account {
@@ -156,24 +160,21 @@ a {
 
 main {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   background-color: #141922;
-  margin-top: 10vh;
   overflow: auto;
 }
 
 /* ========== Header ==========*/
 header {
   background-color: rgb(8, 11, 18);
-  width: 85vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-left: 15vw;
+  position: sticky;
+  top:0;
   z-index: 9999;
 }
 
@@ -403,17 +404,7 @@ header {
   transform: translateX(-50%);
 }
 
-.green-line::before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: 0;
-  width: 4px;
-  /* spessore linea */
-  height: 100%;
-  /* altezza del genitore */
-  background-color: #a3f02e;
-}
+
 
 .green-line h3 {
   vertical-align: middle;
