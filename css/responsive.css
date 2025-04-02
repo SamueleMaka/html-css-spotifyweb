@@ -49,7 +49,7 @@
     .logo{
         display: none;
     }
-    .sidebar-action > h3{
+    .sidebar-item > h3{
         display: none;
     }
     #playlist-title{
@@ -61,10 +61,10 @@
     .playlist-list{
         display: none;
     }
-    .install-app p{
+    .sidebar-item p{
         display: none;
     }
-    .account h3{
+    .sidebar-item h3{
         display: none;
     }
     .volume-container{
