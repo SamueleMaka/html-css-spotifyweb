@@ -151,7 +151,7 @@ main{
 }
 /* ========== Header ==========*/
 header{
-  background-color: #080b12;
+  background-color: rgb(8, 11, 18);
   width: 85vw;
   height: 10vh;
   display: flex;
@@ -305,46 +305,129 @@ header{
   width: 100%;
   gap: 1rem;
 }
+
 .timeline{
-  -webkit-appearance: none; 
   display: block;
   width: 100%;
   height: 0.5rem;
   border-radius: 5rem;
   background: #a3a3a3;
-
+  -webkit-appearance: none;
 }
 .timeline::-webkit-slider-thumb{
   -webkit-appearance: none;
 }
 
+.timeline:hover{
+  -webkit-appearance:auto;
+}
+
+
 
 .volume-slider{
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   display: block;
   width: 100%;
   height: 0.5rem;
   border-radius: 5rem;
   background: #a3a3a3;
 }
+.volume-slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+}
+.volume-slider:hover{
+  -webkit-appearance: auto;
+}
+
 .volume-container{
   width: 60%;
   flex-shrink: 2;
 }
 .player-bar__controls ul{
-  width: 40%;
-}
-.volume-slider::-webkit-slider-thumb{
-  -webkit-appearance: none;
+  width: 25%;
 }
 
 .player-bar__controls {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-basis: 25%;
 }
 .player-bar__controls i{
   margin: 0;
+}
+.underline{
+  position: relative;
+}
+.underline::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 40%; /* Larghezza della sottolineatura, puoi regolare */
+  height: 4px;
+  background-color: #a3f02e;
+}
+.green-line{
+  position: relative;
+}
+.green-line::before{
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 4px;           /* spessore linea */
+  height: 100%;         /* altezza del genitore */
+  background-color: #a3f02e;
+}
+.green-line h3{
+  vertical-align: middle;
+}
+
+.album-card{
+  position: relative;
+}
+
+.play-hover{
+  font-size: 3rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  display: none;
+}
+
+.album-card:hover{
+  img{
+    opacity: 0.5;
+  }
+  .play-hover{
+    display: inline-block;
+  }
+}
+.large-btn:hover{
+  h3{
+    font-size: 0.9rem;
+  }
+  
+}
+.small-text:hover, .medium-text:hover, .large-text:hover{
+  color: white;
+}
+.new-playlist:hover{
+  .plus{
+    background-color: white;
+  }
+  h3{
+    color: white;
+  }
+}
+.bottom-bar i:hover{
+  color: white;
+  
+}
+.bottom-bar .fa-play-circle:hover{
+  font-size: 3rem;
 }

@@ -21,6 +21,9 @@
    .bottom-bar__player{
     flex-basis: 40%;
    }
+   .player-actions ul{
+    gap: 1rem;
+   }
    .bottom-bar__current{
     flex-basis: 28%;
    }
