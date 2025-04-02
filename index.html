@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Importazione font, icone e CSS esterni -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
@@ -30,33 +31,41 @@
                                               `---'        `---'                                                                                                                                                                           
 
   -->
-    <!-- ========== Colonna Sinistra Grande ========== -->
+
+    <!-- Contenitore principale della pagina -->
+
     <div class="container">
+      <!-- Sidebar sinistra con logo, navigazione e playlist -->
 
       <section class="left-sidebar">
+        <!-- Parte superiore della sidebar (logo e menu principale) -->
 
         <section class="upper-sidebar">
-
           <img src="img/logo.svg" alt="" class="logo" />
-          <img src="img/logo-small.svg" alt="" class="small-logo">
-          
+          <img src="img/logo-small.svg" alt="" class="small-logo" />
+          <!-- Voci di navigazione principali: Home, Cerca, Libreria -->
+
           <section class="actions">
-            <div class="sidebar-action green-line">
+            <div class="sidebar-item green-line relative">
               <img src="img/home.svg" alt="" />
               <h3 class="large-text">Home</h3>
             </div>
-            <div class="sidebar-action">
+            <div class="sidebar-item">
               <img src="img/search.svg" alt="" />
               <h3 class="large-text">Cerca</h3>
             </div>
-            <div class="sidebar-action">
+            <div class="sidebar-item">
               <img src="img/libreria.svg" alt="" />
               <h3 class="large-text">La tua libreria</h3>
             </div>
           </section>
 
-
-          <h3 class="upper-case margin white bold large-text" id="playlist-title">Playlist</h3>
+          <h3
+            class="upper-case margin white bold large-text"
+            id="playlist-title"
+          >
+            Playlist
+          </h3>
           <div class="new-playlist">
             <div class="plus">+</div>
             <h3 class="large-text">Crea Playlist</h3>
@@ -67,7 +76,6 @@
                 <a href="" class="medium-text">Nome Playlist</a>
               </li>
               <li>
-
                 <a href="" class="medium-text">Nome Playlist</a>
               </li>
               <li>
@@ -88,15 +96,16 @@
             </ul>
           </div>
         </section>
+        <!-- Parte inferiore della sidebar (installazione app e profilo) -->
 
         <section class="lower-sidebar">
-          <div class="install-app">
-            <img src="img/download.svg" alt="">
+          <div class="sidebar-item">
+            <img src="img/download.svg" alt="" />
             <p class="medium-text">Installa App</p>
           </div>
-          <hr>
-          <div class="account">
-            <img src="img/profile.svg" alt="" />
+          <hr />
+          <div class="sidebar-item">
+            <img src="img/profile.svg" class="account" alt="" />
             <h3 class="white bold medium-text">John Doe</h3>
           </div>
         </section>
@@ -110,12 +119,15 @@
           </div>
         </header>
 
-        <!-- ========== Wrapper ========== -->
+        <!-- Contenitore centrale dei contenuti scrollabili -->
+
         <section class="wrapper">
           <div class="wrapper-header">
             <ul>
               <li class="inline-list">
-                <a href="" class="upper-case medium-text underline">In evidenza</a>
+                <a href="" class="upper-case medium-text underline relative"
+                  >In evidenza</a
+                >
               </li>
               <li class="inline-list">
                 <a href="" class="upper-case medium-text">podcast</a>
@@ -140,98 +152,105 @@
 
             <div class="carousel">
               <div class="album-card">
-                  <img src="img/metal_lifting.jpg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
-                <h3 class="album-card__title bold white medium-text">Heavy Metal</h3>
+                <img src="img/metal_lifting.jpg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
+                <h3 class="album-card__title bold white medium-text">
+                  Heavy Metal
+                </h3>
                 <p class="album-card__subtitle small-text">Subtitle</p>
               </div>
 
               <div class="album-card">
-                  <img src="img/stranger.jpeg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
-                <h3 class="album-card__title bold white medium-text">Stranger Things, Vol. 1 (a Netfliz Original Series Soundtrack)</h3>
-                <p class="album-card__subtitle small-text">Kyie Dixon & Michael Stein</p>
+                <img src="img/stranger.jpeg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
+                <h3 class="album-card__title bold white medium-text">
+                  Stranger Things, Vol. 1 (a Netfliz Original Series Soundtrack)
+                </h3>
+                <p class="album-card__subtitle small-text">
+                  Kyie Dixon & Michael Stein
+                </p>
               </div>
 
               <div class="album-card">
-                  <img src="img/aquietplace.jpeg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
-                <h3 class="album-card__title bold white medium-text">A quiet place</h3>
+                <img src="img/aquietplace.jpeg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
+                <h3 class="album-card__title bold white medium-text">
+                  A quiet place
+                </h3>
                 <p class="album-card__subtitle small-text">Subtitle</p>
               </div>
 
               <div class="album-card">
-                  <img src="img/split.jpeg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
+                <img src="img/split.jpeg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
                 <h3 class="album-card__title bold white medium-text">Split</h3>
                 <p class="album-card__subtitle small-text">Subtitle</p>
               </div>
 
               <div class="album-card">
-                  <img src="img/cure.jpeg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
-                <h3 class="album-card__title bold white medium-text">A cure for welnlnes</h3>
+                <img src="img/cure.jpeg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
+                <h3 class="album-card__title bold white medium-text">
+                  A cure for welnlnes
+                </h3>
                 <p class="album-card__subtitle small-text">Subtitle</p>
               </div>
 
               <div class="album-card">
-                  <img src="img/sinister.jpeg" alt="" />
-                  <i class="fa-regular fa-circle-play play-hover"></i>
-                <h3 class="album-card__title bold white medium-text">Sinister</h3>
+                <img src="img/sinister.jpeg" alt="" />
+                <i class="fa-regular fa-circle-play play-hover"></i>
+                <h3 class="album-card__title bold white medium-text">
+                  Sinister
+                </h3>
                 <p class="album-card__subtitle small-text">Subtitle</p>
               </div>
             </div>
           </div>
           <div class="for-you">
-            <h1 class="bold white larger-text">
-              Creato per John Doe
-            </h1>
+            <h1 class="bold white larger-text">Creato per John Doe</h1>
             <h3 class="bold medium-text margin">
               Più ascolti, più accurati saranno i tuoi suggerimenti
             </h3>
           </div>
           <div class="carousel">
-
             <div class="album-card">
-              <img src="img/radar.jpeg" alt="">
+              <img src="img/radar.jpeg" alt="" />
               <i class="fa-regular fa-circle-play play-hover"></i>
-              <h3 class="album-card__title bold white medium-text">Release Radar</h3>
+              <h3 class="album-card__title bold white medium-text">
+                Release Radar
+              </h3>
             </div>
 
             <div class="album-card">
-              <img src="img/mixdaily.jpeg" alt="">
+              <img src="img/mixdaily.jpeg" alt="" />
               <i class="fa-regular fa-circle-play play-hover"></i>
-              <h3 class="album-card__title bold white medium-text">Daily Mix 1</h3>
+              <h3 class="album-card__title bold white medium-text">
+                Daily Mix 1
+              </h3>
             </div>
           </div>
 
-
           <div class="popular">
-            <h1 class="bold white larger-text">
-              Artisti più popolari
-            </h1>
+            <h1 class="bold white larger-text">Artisti più popolari</h1>
             <h3 class="bold medium-text margin">
               Più ascolti, più accurati saranno i tuoi suggerimenti
             </h3>
             <div class="carousel">
               <div class="album-card">
-                <img src="img/einaudi.jpeg" alt="">
+                <img src="img/einaudi.jpeg" alt="" />
               </div>
               <div class="album-card">
-                <img src="img/youg.jpeg" alt="">
+                <img src="img/youg.jpeg" alt="" />
               </div>
             </div>
-            
           </div>
         </section>
       </main>
     </div>
 
     <!-- ========== Bottom Bar ========== -->
-     <div class="footer-container">
+    <div class="footer-container">
       <footer class="bottom-bar">
-
-
         <div class="bottom-bar__current">
           <div class="song-card">
             <img src="img/sinister.jpeg" alt="" />
@@ -243,10 +262,9 @@
               <i class="fa-solid fa-heart"></i>
               <i class="fa-solid fa-folder"></i>
             </div>
+          </div>
         </div>
-        </div>
-  
-  
+
         <div class="bottom-bar__player">
           <div class="player-actions">
             <ul>
@@ -269,13 +287,11 @@
           </div>
 
           <div class="player-timeline">
-
             <p class="small-text white">0:25</p>
             <div class="timeline-container">
-              <input type="range" class="timeline">
+              <input type="range" class="timeline" />
             </div>
             <p class="small-text">4:35</p>
-
           </div>
         </div>
 
@@ -291,13 +307,12 @@
               <a href=""><i class="fa-solid fa-volume-up"></i></a>
             </li>
           </ul>
-  
+
           <div class="volume-container">
-            <input type="range" class="volume-slider">
+            <input type="range" class="volume-slider" />
           </div>
         </div>
       </footer>
-     </div>
-    
+    </div>
   </body>
 </html>
